@@ -12,7 +12,7 @@ M = ss(am,km,1,0);
 % First case
 Gam = 2*diag([1 1 1 1 1 1]);
 %Second case
-% Gam = 2*diag([1 1 1 1]);
+ %Gam = 2*diag([1 1 1 1]);
 %Init theta
 % Fist case
 theta = [0;0;0;0;0;0];
@@ -22,4 +22,4 @@ theta = [0;0;0;0;0;0];
 % First case
 theta_f = [0.01;-1;1;0.5];
 % second case
-% theta_f = [-1;1];
+%theta_f = [-1;1];
