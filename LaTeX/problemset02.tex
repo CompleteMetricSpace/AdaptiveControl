@@ -503,6 +503,10 @@
 		\end{subfigure}
 		\caption{$t \in [0,50]s$, two parameters known to vanish.}
 	\end{figure}
+	The introduced change is that we have more knowledge of our system in the beginning. Thus the adaptive controller can use the information he gets from the reference signal to only estimate two parameters instead of four. Intuitively it makes sense that the parameters converge faster, due to more a priori knowledge.
+	If you compare the upper left pictures in figure 7 and figure 13 you can see that the error signal has in general a lower amplitude in the case of four unknown parameters. One might think would be a better behavior, but the adaptive law is linear in the error signal, thus a higher error signal leads to a higher derivative 
+	of the parameter vector $\Theta$ and thus to a 'faster' learning.\\
+	\newpage
 	\section*{Problem 2}
 	The second part of the homework deals with the problem of parameter convergence of the MRAC-scheme. We already know that the error dynamics
 	\begin{equation}
